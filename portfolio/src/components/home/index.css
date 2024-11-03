@@ -30,3 +30,8 @@
     font-family: monospace;
     margin-left: 600px;
 }
+
+.confetti-trigger {
+    color: rgb(188, 129, 52);
+    cursor: pointer;
+}
