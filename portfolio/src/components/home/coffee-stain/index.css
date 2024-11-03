@@ -1,0 +1,8 @@
+.coffee-stain {
+    margin-top: 80px;
+    width: 600px;
+    margin-left: 1000px;
+    z-index: -1;
+    opacity: 0.3;
+    rotate: 180deg;
+}

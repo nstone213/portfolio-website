@@ -1,6 +1,8 @@
 import './index.css';
 import React, { useRef } from 'react';
 import confetti from 'canvas-confetti';
+import CoffeeStain from './coffee-stain'
+
 
 function Home() {
     const confettiTriggerRef = useRef(null);
@@ -23,12 +25,13 @@ function Home() {
 
     return (
         <>
-            <div className='container'>
-                <p className='text'>Hi. I'm Nicholas Stone.</p>
-                <p className='description'>
+            <div className='container' draggable="false">
+                <p className='text' draggable="false">Hi. I'm Nicholas Stone.</p>
+                <p className='description' draggable="false">
                     SWE studying CS & Psychology @<span className='confetti-trigger' ref={confettiTriggerRef} onClick={handleConfetti}>Georgia Tech</span>.
                 </p>
             </div>
+            <CoffeeStain draggable="false"/>
         </>
     );
 }
