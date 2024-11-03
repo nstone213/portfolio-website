@@ -1,0 +1,73 @@
+/* Reset styles for all elements */
+* {
+    margin: 0;
+    padding: 0;
+    outline: none;
+    border: none;
+    text-decoration: none;
+    box-sizing: border-box;
+}
+
+.nav {
+    position: absolute;
+    bottom: 0;
+    top: 0;
+    height: 100%;
+    left: 0;
+    background: #fff;
+    width: 90px; /* Start width */
+    overflow: hidden;
+    transition: width 0.2s linear;
+    box-shadow: 0 20px 35px rgba(0, 0, 0, 0.1);
+}
+
+/* Logo styles */
+.logo {
+    text-align: center;
+    display: flex;
+
+}
+
+.logo span {
+    font-weight: bold;
+    padding-left: 0px;
+    font-size: 18px;
+    text-transform: uppercase;
+    white-space: nowrap;
+}
+
+/* Link styles */
+a {
+    position: relative;
+    color: rgb(85, 83, 83);
+    font-size: 14px;
+    display: flex; /* Change to flex for proper layout */
+    align-items: center; /* Center items vertically */
+    width: 100%; /* Full width */
+    padding: 10px;
+}
+
+/* Icon styles */
+.fonticon {
+    position: relative;
+    width: 20px;
+    height: 40px;
+    text-align: center;
+    margin-left: 25px;
+}
+
+/* Navigation item styles */
+.nav-item {
+    margin-left: 35px; /* Adjusted margin */
+}
+
+/* Hover effects */
+a:hover {
+    background: #eee; /* Background color change on hover */
+}
+
+/* Nav hover effect */
+.nav:hover {
+    width: 280px; /* Expanded width */
+    transition: all 0.5s ease;
+}
